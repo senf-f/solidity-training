@@ -11,4 +11,19 @@ contract SimpleContract {
     string name = "Thomas";
     uint storedata = 34;
     bool a = false;
+
+    address walletAddress = 0x722dddhwwwue;
+
+    string[] names;
+
+    struct User {
+        string firstName;
+        string lastName;
+        uint age;
+    }
+
+    enum userType {buyer, seller}
+
+    mapping(address => uint) public balances;
+
 }
